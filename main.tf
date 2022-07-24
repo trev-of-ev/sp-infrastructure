@@ -43,4 +43,5 @@ resource "aws_launch_template" "sp-template" {
 
 resource "aws_ami" "sp_ami" {
   name = "sp-ami"
+  root_device_name = "/dev/sda1"
 }
